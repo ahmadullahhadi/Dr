@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmadullah Hadi - Student and Aspiring Technologist. Explore my journey, skills, and projects in technology and business.">
+
+    <!-- Title and Favicon -->
+    <title>Ahmadullah Hadi - Portfolio</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ahmadullahhadi/portfolio/main/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <style type="text/css" id="dcoder_stylesheet">
+:root {
+    --bg-color: #0a192f;
+    --text-color: #8892b0;
+    --highlight-color: #64ffda;
+    --secondary-color: #112240;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+section {
+    padding: 100px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
+    color: #ccd6f6;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 span {
+    color: var(--highlight-color);
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.about, .skills, .projects, .contact {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills ul li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--highlight-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #ccd6f6;
+    margin-bottom: 0.5rem;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact ul li a:hover {
+    color: var(--highlight-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        height: auto;
+        padding-top: 150px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+}</style></head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="container">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <h1>
+            <!-- Highlighted Greeting -->
+            <span>Hello, I'm</span>A. Hadi
+          </h1>
+          <p>
+            Exploring tech, coding, and business to build creative solutions for the future.
+          </p>
+          <!-- Call to Action Button -->
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <div class="container">
+        <section id="about" class="about">
+          <h2>About Me</h2>
+          <p>
+            I'm Ahmadullah Hadi, a student motivated by my love for technology, programming, and business, committed to pursuing a career that integrates these passions for a better tomorrow.
+          </p>
+          <p>
+            When I’m not busy, I find joy in music, anime/manga, caring for animals (especially cats), and reading books. These activities keep me curious and motivated to learn more.
+          </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+          <h2>Skills (in Progress)</h2>
+          <!-- Skills List -->
+          <ul>
+            <li>Python Programming (Basics)</li>
+            <li>ML/AI (Exploring)</li>
+            <li>C Programming (Beginner)</li>
+            <li>Cybersecurity Basics</li>
+            <li>Marketing Fundamentals</li>
+            <li>Finance Principles</li>
+          </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+          <p>
+            I'm currently working on building my project portfolio. Check back soon to see my latest work!
+          </p>
+          <!-- Project Grid -->
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Project 1</h3>
+              <p>Coming Soon</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 2</h3>
+              <p>Coming Soon</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 3</h3>
+              <p>Coming Soon</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm always open to new opportunities and connections. Feel free to reach out!
+          </p>
+          <!-- Contact Links -->
+          <ul>
+            <li><a href="https://web.facebook.com/ahmadullahhadi" target="_blank">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/ahmadullahhadi" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/ahmadullahhadi" target="_blank">GitHub</a></li>
+            <li><a href="mailto:ahmadullahhadi85@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/+8801611469710" target="_blank">WhatsApp</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 Ahmadullah Hadi. All rights reserved.</p>
+    </footer>
+  
+<script type="text/javascript" id="dcoder_script">// Wait for the DOM content to fully load
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling functionality for navigation links
+    const links = document.querySelectorAll('nav ul li a'); // Select all navigation links
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            const targetId = link.getAttribute('href').substring(1); // Get the ID of the target section
+            const targetSection = document.getElementById(targetId); // Find the target section by ID
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth' // Smoothly scroll to the target section
+                });
+            }
+        });
+    });
+
+    // Section visibility animation based on scroll position
+    const sections = document.querySelectorAll('section'); // Select all sections on the page
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) { // Check if the section is visible in the viewport
+                entry.target.classList.add('visible'); // Add the 'visible' class for animations
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger the observer when 10% of the section is visible
+
+    // Observe each section for visibility changes
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});</script></body></html>
